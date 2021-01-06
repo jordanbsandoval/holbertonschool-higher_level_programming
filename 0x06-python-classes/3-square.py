@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """3-square.py: Defines Area that returns the current square area"""
 
+
 class Square:
     """Creates  Square type"""
 
