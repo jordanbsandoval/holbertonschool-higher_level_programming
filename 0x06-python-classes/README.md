@@ -22,5 +22,4 @@
 <li>How to bind attributes to object and classes</li>
 <li>What is the __dict__ of a class and/or instance of a class and what does it contain</li>
 <li>How does Python find the attributes of an object or class</li>
-<li>How to use the getattr function</li>
 </ul>
