@@ -2,6 +2,7 @@
 """1-square.py: class Square that defines a square
 private instantiation attribute of size"""
 
+
 class Square:
     """Creates Square type"""
 
