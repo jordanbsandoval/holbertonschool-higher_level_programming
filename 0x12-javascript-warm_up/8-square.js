@@ -1,10 +1,10 @@
 #!/usr/bin/node
 // Script that print an square
-const number = parseInt(process.argv[2]);
-if (isNaN(number)) {
+const num = parseInt(process.argv[2]);
+if (isNaN(num)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < number; i++) {
-    console.log('x'.repeat(number));
+  for (let i = 0; i < num; i++) {
+    console.log('x'.repeat(num));
   }
 }
