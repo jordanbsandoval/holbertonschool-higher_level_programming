@@ -9,11 +9,11 @@ const id = process.argv[2];
 const url = 'https://swapi-api.hbtn.io/api/films/';
 
 // url + id
-const url_id = url + id;
+const urlId = url + id;
 
-request(url_id, function (error, response, body) {
+request(urlId, function (error, response, body) {
   if (!error && response.statusCode === 200) {
     const info = JSON.parse(body);
-    console.log(info);
+    console.log(info.title);
   }
 });
