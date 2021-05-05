@@ -3,4 +3,4 @@
 ## Resources
 Read or watch:
 
-* [Working with JSON data](#https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+* [Working with JSON data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
