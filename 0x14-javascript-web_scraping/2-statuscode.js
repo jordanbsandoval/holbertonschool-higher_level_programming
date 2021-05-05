@@ -1,12 +1,13 @@
 #!/usr/bin/node
-'use strict';
+// script that display the status code of a GET request.
+// importando el modulo request
 const request = require('request');
+
+// Url a get
 const url = process.argv[2];
 
-request(url, function (error, response) {
-  if (error) {
-    console.error(error);
-    return;
-  } // Print the error if one occurred
-  console.log('code:', response.statusCode); // Print the response status code if a response was received
+request(url, function (error, response, body) {
+  if (!error && response.statusCode === 200) {
+    console.log('Code:', response.statusCode);
+  }
 });
