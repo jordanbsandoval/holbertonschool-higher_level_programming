@@ -1,10 +1,13 @@
 #!/usr/bin/node
-'use strict';
+// importando el modulo fs
 const fs = require('fs');
-const path = process.argv[2];
-const content = process.argv[3];
 
-fs.writeFile(path, content, 'utf8', function (err) {
+// obteniendo el path del archivo
+const file_path = process.argv[2];
+const write = process.argv[3];
+
+// utilizando el metodo writeFile para escribir en el archivo
+fs.writeFile(file_path, write, function (err) {
   if (err) {
     return console.error(err);
   }
