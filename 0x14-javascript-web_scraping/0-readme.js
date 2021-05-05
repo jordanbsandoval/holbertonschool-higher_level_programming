@@ -1,4 +1,5 @@
 #!/usr/bin/node
+'use strict';
 // importando el modulo fs
 let fs = require("fs");
 
