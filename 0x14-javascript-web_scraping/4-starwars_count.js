@@ -6,10 +6,19 @@ const request = require('request');
 const url = process.argv[2];
 
 // request
-request(url, function (error, response, body){
+request(url, function (error, response, body) {
   if (!error && response.statusCode == 200) {
     const info = JSON.parse(body);
-    for i in info.results
-    console.log(info.results)
+    let count = 0;
+    for (let i = 0; i < info.results.length; ++i) {
+      const allInfo = info.results[i].characters;
+      for (let p = 0; p < allInfo.length; ++p) {
+        const spt = allInfo[p].split('e/');
+        if (spt[1] === '18/') {
+          count++;
+        }
+      }
+    }
+    console.log(count);
   }
 });
