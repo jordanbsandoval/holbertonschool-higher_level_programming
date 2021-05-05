@@ -7,7 +7,10 @@ const url = process.argv[2];
 
 // request
 request(url, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
+  if (error) {
+    console.error(error);
+  }
+  else if(response.statusCode === 200) {
     const info = JSON.parse(body);
     let count = 0;
     for (let i = 0; i < info.results.length; ++i) {
