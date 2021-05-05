@@ -12,8 +12,8 @@ const url = 'https://swapi-api.hbtn.io/api/films/';
 const url_id = url + id;
 
 request(url_id, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
+  if (!error && response.statusCode === 200) {
     const info = JSON.parse(body);
-    console.log(info.title);
+    console.log(info);
   }
 });
