@@ -1,14 +1,19 @@
 #!/usr/bin/node
-'use strict';
+// Importando el modulo request
 const request = require('request');
+
+// obteniedo la entrada
 const id = process.argv[2];
 
-request('https://swapi-api.hbtn.io/api/films/' + id, function (error, response, body) {
-  if (error) {
-    console.error(error);
-    return;
-  } // Print the error if one occurred
-  if (response.statusCode === 200) {
-    console.log(JSON.parse(body).title);
+// url a trabajar
+const url = 'https://swapi-api.hbtn.io/api/films/';
+
+// url + id
+const url_id = url + id;
+
+request(url_id, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    const info = JSON.parse(body);
+    console.log(info.title);
   }
 });
