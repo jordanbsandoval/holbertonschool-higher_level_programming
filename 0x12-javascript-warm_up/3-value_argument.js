@@ -1,4 +1,4 @@
-#!/usr/bin/node                                                                                       
+#!/usr/bin/node
 // Write a script that prints the first argument passed to it
 const entrada = process.argv[2];
 if (!entrada) {
