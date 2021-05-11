@@ -1,11 +1,13 @@
 #!/usr/bin/node
-const n1 = parseInt(process.argv[2]);
+'use strict';
+// Write a script that computes and prints a factorial
+const entrada = parseInt(process.argv[2]);
 
-function recFactorizar (n) {
-  if (!(n)) {
-    return (1);
+function factorial (x) {
+  if (!(x)) {
+    return(1);
   } else {
-    return (n * recFactorizar(n - 1));
+    return(x * factorial(x - 1));
   }
-}
-console.log(recFactorizar(n1));
+} 
+console.log(factorial(entrada));
