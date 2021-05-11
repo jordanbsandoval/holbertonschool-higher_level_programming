@@ -1,4 +1,5 @@
 #!/usr/bin/node
+'use strict';
 // write an script that print a square
 const entrada = process.argv[2];
 if (!entrada) {
