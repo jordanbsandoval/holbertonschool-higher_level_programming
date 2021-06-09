@@ -1,5 +1,3 @@
 #!/usr/bin/node
-// Write an empty class Rectangle that defines a rectangle:
-class Rectangle {
-  constructor() {}
-}
+// exportando un objeto anonimo
+module.exports = class Rectangle {}
