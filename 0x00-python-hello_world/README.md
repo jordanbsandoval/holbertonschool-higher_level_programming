@@ -16,4 +16,3 @@ Read or watch:
 * [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
 * [Learn to Program](https://www.youtube.com/watch?v=nwjAHQERL08&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=1&t=2260s)
 * [PEP 8 – Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
->>>>>>> ed5cf53e5ef67b4c55d01733da065e9048236161
