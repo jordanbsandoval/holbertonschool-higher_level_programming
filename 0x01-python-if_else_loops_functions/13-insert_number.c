@@ -17,19 +17,16 @@ listint_t *insert_node(listint_t **head, int number)
 
 	new_node->n = number;
 	new_node->next = NULL;
-	printf("actuali: %d\n", actual->n);
 	while (actual)
 	{
 		if (actual->n > number)
 		{
 			new_node->next = actual;
 			tmp->next = new_node;
-			printf("tmp1: %d\n", tmp->n);
-			return (tmp);
+			break;
 		}
 		tmp = actual;
-		printf("tmp:%d\n", tmp->n);
 		actual = actual->next;
 	}
-	return (NULL);
+	return (tmp);
 }
